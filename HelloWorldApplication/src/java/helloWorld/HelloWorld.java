@@ -33,15 +33,14 @@ public class HelloWorld {
     }
 
     /**
-     * Retrieves representation of an instance of helloWorld.HelloWorld
-     * @return an instance of java.lang.String
-     */
-    @GET
-    @Produces("text/html")
-    public String getHtml() {
-        //TODO return proper representation object
-        throw new UnsupportedOperationException();
-    }
+    * Retrieves representation of an instance of helloWorld.HelloWorld
+    * @return an instance of java.lang.String
+    */
+   @GET
+   @Produces("text/html")
+   public String getHtml() {
+       return "<html lang=\"en\"><body><h1>Hello, World!!</body></h1></html>";
+   }
 
     /**
      * PUT method for updating or creating an instance of HelloWorld

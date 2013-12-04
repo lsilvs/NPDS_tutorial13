@@ -1,2 +1,4 @@
 .DS_Store
 /HelloWorldApplication/nbproject/private/
+/HelloWorldApplication/build/
+/HelloWorldApplication/dist/
