@@ -37,9 +37,10 @@ public class HelloWorld {
     * @return an instance of java.lang.String
     */
    @GET
+   @Path("/{name}")
    @Produces("text/html")
-   public String getHtml() {
-       return "<html lang=\"en\"><body><h1>Hello, World!!</body></h1></html>";
+   public String getHtml(@PathParam("name") String name) {
+       return "<html lang=\"en\"><body><h1>Hello, " + name + "!!</body></h1></html>";
    }
 
     /**
